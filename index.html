@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Teacher's Day!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <div class="container">
+        
+        <div class="intro-header">
+            <h1>Happy Teacher's Day!</h1>
+            <p>A token of gratitude for your endless guidance and inspiration</p>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="content-grid">
+                
+                <div class="letter-content">
+                    <h2>Dear Ma'am,</h2>
+                    <p>
+                        Thank you so much sa sobrang habang pasensya, dedication at walang humpay na pag-guide sa amin. Hindi lang lessons ang tinuturo mo sa amin kundi ang pagiging curious. Mas pinapadali mo ang mga lessons para mas maintindihan namin. Salamat sa lahat ng effort mo para sa amin.
+                    </p>
+                    <p>
+                        Your hard work, understanding, and passion for teaching truly make a world of difference. I am deeply grateful for the time and effort you invest in helping us learn and grow.
+                    </p>
+                    <div class="signature">
+                        With sincere gratitude and respect,
+                        <span>Shane</span>
+                    </div>
+                </div>
+
+                <div class="photo-section">
+                    <div class="polaroid">
+                        <img src="assets/pic1.jpg" alt="Class Memory 1">
+                        <div class="polaroid-caption">Thank You for Your Guidance</div>
+                    </div>
+
+                    <div class="polaroid">
+                        <img src="assets/pic2.jpg" alt="Class Memory 2">
+                        <div class="polaroid-caption">We Appreciate You!</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const glow = document.getElementById('cursorGlow');
+        window.addEventListener('mousemove', (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+            glow.style.transform = `translate(${x}px, ${y}px)`;
+        });
+    </script>
+</body>
+</html>
